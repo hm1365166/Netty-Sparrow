@@ -13,12 +13,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * Created by beyondwu on 2016/2/22.
- */
+@ChannelHandler.Sharable
 public class NettyClient {
 
-    private String clientName = "beyondwu";
+    private String clientName = "sparrow-msg";
     public static final int BUFFER_SIZE = 1024;
     public static final int HISTORY_LIST_SIZE = 30;
     private Bootstrap bootstrap;

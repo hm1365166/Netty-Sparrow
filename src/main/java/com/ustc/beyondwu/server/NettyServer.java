@@ -14,6 +14,7 @@ import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.SelfSignedCertificate;
 
 import javax.net.ssl.SSLException;
+import java.net.InetSocketAddress;
 import java.security.cert.CertificateException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -123,7 +124,7 @@ public class NettyServer {
             // Start the server.
             ChannelFuture f;
             try {
-                f = b.bind(5600).sync();
+                f = b.bind(new InetSocketAddress("127.0.0.1", 8090)).sync();
                 //socketChannel = f.channel();
                 f.channel().closeFuture().sync();
                 // Wait until the server socket is closed.

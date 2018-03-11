@@ -60,7 +60,8 @@
             <constraints/>
             <properties>
               <horizontalAlignment value="10"/>
-              <text value="发送"/>
+              <text value="ok"/>
+              <verticalAlignment value="0"/>
             </properties>
           </component>
         </children>

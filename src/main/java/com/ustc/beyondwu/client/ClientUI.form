@@ -22,7 +22,7 @@
             <constraints/>
             <properties>
               <columns value="12"/>
-              <text value="10.200.52.3"/>
+              <text value="127.0.0.1"/>
             </properties>
           </component>
           <component id="c9d6" class="javax.swing.JLabel">
@@ -35,7 +35,7 @@
             <constraints/>
             <properties>
               <columns value="6"/>
-              <text value="5600"/>
+              <text value="8000"/>
             </properties>
           </component>
           <component id="5fbad" class="javax.swing.JButton" binding="ConnectBtn">
@@ -87,7 +87,7 @@
               <text value="输入消息："/>
             </properties>
           </component>
-          <component id="88acf" class="javax.swing.JTextField" binding="msgInput">
+          <component id="88acf" class="javax.swing.JTextField" binding="msgInput" custom-create="true">
             <constraints/>
             <properties>
               <columns value="30"/>

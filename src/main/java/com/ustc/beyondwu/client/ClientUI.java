@@ -4,9 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * Created by beyondwu on 2016/2/22.
- */
+
 public class ClientUI implements ClientObserver {
     private JPanel panel1;
     private JPanel MessagePanel;
@@ -74,10 +72,12 @@ public class ClientUI implements ClientObserver {
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("客户端");
+        JFrame frame = new JFrame("Sparrow-msg");
         frame.setContentPane(new ClientUI().panel1);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
     }
+
+
 }
